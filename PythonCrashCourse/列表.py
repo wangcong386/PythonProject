@@ -65,3 +65,22 @@ print('food length', len(food))
 # 组织列表---使用range()创建数字列表
 num_list = list(range(12))
 print('num_list', num_list)
+
+# 列表切片
+print('num_list[0:3]', num_list[0:3])
+print('num_list[:3]', num_list[:3])
+print('num_list[5:]', num_list[5:])
+print('num_list[5:]', num_list[-3:])
+
+# 复制列表---使用整个列表的切片，若直接赋值，新变量也指向原列表内存
+num_list_copy = num_list[:]
+num_list_copy.append(100)
+print('num_list', num_list)
+print('num_list_copy', num_list_copy)
+
+# 列表判空
+num_list_1 = []
+if num_list_1:
+    print('num_list_1', num_list_1)
+else:
+    print('num_list_1 is empty')
